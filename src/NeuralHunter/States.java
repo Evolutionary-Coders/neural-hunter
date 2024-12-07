@@ -9,8 +9,6 @@ public class States {
     public static int numStates = 0;
 
     public static double[] angleStates;
-    public static double[] heightStates;
-    public static double[] widthStates;
 
     public static void init() {
         int statesIndex = 0;
