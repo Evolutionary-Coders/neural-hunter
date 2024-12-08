@@ -1,6 +1,7 @@
 package NeuralHunter;
 
 public class Actions {
+
     public static final int numActions = 5;
     public static final int AHEAD_LEFT = 0;
     public static final int AHEAD_RIGHT = 1;

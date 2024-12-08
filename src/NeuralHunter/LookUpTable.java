@@ -15,7 +15,6 @@ public class LookUpTable {
         this.initializeLUT();
     }
 
-    // Inicialização da LUT
     public void initializeLUT() {
         this.table = new double[States.numStates][Actions.numActions];
         for (int i = 0; i < States.numStates; i++) {
@@ -40,7 +39,7 @@ public class LookUpTable {
         updateQ(previousState, previousAction, delta);
     }
 
-    // Seleção de ação
+    // Seleciona ação com base na Q-table
     public int selectAction(int state, boolean random) {
         double[] qValues = table[state];
         if (random || hasNoQValues(qValues)) {

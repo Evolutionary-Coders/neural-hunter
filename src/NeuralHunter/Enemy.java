@@ -1,6 +1,7 @@
 package NeuralHunter;
 
 public class Enemy {
+
     private double angle;
     private double distance;
 

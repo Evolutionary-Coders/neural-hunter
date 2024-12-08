@@ -1,6 +1,7 @@
 package NeuralHunter;
 
 public class States {
+
     public static final int NUM_HEADING = 4;
     public static final int NUM_TARGET_DISTANCE = 4;
     public static final int NUM_TARGET_HEADING = 4;
