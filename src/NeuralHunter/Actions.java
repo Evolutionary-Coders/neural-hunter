@@ -8,4 +8,6 @@ public class Actions {
     public static final int BACK_LEFT = 2;
     public static final int BACK_RIGHT = 3;
     public static final int FIRE = 4;
+    public static final int DISTANCE = 100;
+    public static final int TURN_DEGREE = 90;
 }
