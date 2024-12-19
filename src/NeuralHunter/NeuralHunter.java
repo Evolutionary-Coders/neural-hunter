@@ -55,7 +55,13 @@ public class NeuralHunter extends AdvancedRobot {
         setBulletColor(disparo);
         setScanColor(rosio);
     }
+    public void victoryDance() {
+        for (int i = 0; i < 50; i++) {
+            turnRight(15);
+            turnLeft(15);
 
+        }
+    }
 
     private void prepareRobot() {
         setAdjustGunForRobotTurn(false);
@@ -228,6 +234,7 @@ public class NeuralHunter extends AdvancedRobot {
         saveBattleResult(true);
         rewardColor();
         addReward(RobotConfig.REWARD_WIN);
+        victoryDance();
     }
 
     @Override
