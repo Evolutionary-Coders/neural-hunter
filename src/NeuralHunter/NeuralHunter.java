@@ -3,7 +3,9 @@ import java.awt.*;
 import robocode.*;
 
 public class NeuralHunter extends AdvancedRobot{
-    public void run(){
+    public void run() {
+
+
         // Set colors
         Color rosio = new Color(122, 13, 50);
 
@@ -23,20 +25,26 @@ public class NeuralHunter extends AdvancedRobot{
         setBulletColor(rosio);
         setScanColor(rosio);
 
-        while(true){
+        while (true) {
             setBodyColor(rosio);
             setGunColor(rosio);
             setRadarColor(rosio);
             setBulletColor(rosio);
             setScanColor(rosio);
-        }
 
-
-
-        while(true){
-            setAhead(100);
-            setTurnRight(360);
+            //movimentação básica
+            ahead(100);
+            turnRight(10);
+            turnGunLeft(180);
+            fire(50);
             execute();
+        }
+           }
+    public void onWin (WinEvent event){
+        for (int i = 0; i < 50; i++) {
+            turnRight(15);
+            turnLeft(15);
+
         }
     }
 
@@ -57,6 +65,11 @@ public class NeuralHunter extends AdvancedRobot{
     }
 
     public void onWin(WinEvent event) {
+    for (int i = 0; i < 50; i++) {
+        turnRight(15);
+        turnLeft(15)
+
+    }
     }
 
     public void onDeath(DeathEvent event) {
