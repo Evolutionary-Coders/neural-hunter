@@ -27,10 +27,10 @@ public class NeuralHunter extends AdvancedRobot {
         mainBattleLoop();
     }
 
-    Color disparo = new Color(255, 213, 0);
+    Color disparo = new Color(255, 122, 166);
 
     private void mainColor() {
-        Color rosio = new Color(255, 255, 255, 255);
+        Color rosio = new Color(0, 0, 0, 255);
         setBodyColor(rosio);
         setGunColor(rosio);
         setRadarColor(rosio);
@@ -92,7 +92,7 @@ public class NeuralHunter extends AdvancedRobot {
         }
     }
 
-   private void updateLearningCycle() {
+    private void updateLearningCycle() {
         double[] newStates = getCurrentNNStates();
         int newAction = selectBestAction(newStates);
 
