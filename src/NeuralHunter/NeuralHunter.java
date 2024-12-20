@@ -26,12 +26,33 @@ public class NeuralHunter extends AdvancedRobot {
         prepareRobot();
         mainBattleLoop();
     }
+
+    Color disparo = new Color(255, 122, 166);
+
     private void mainColor() {
-        Color rosio = new Color(255, 162, 196);
+        Color rosio = new Color(0, 0, 0, 255);
         setBodyColor(rosio);
         setGunColor(rosio);
         setRadarColor(rosio);
-        setBulletColor(rosio);
+        setBulletColor(disparo);
+        setScanColor(rosio);
+    }
+
+    private void penaltyColor() {
+        Color rosio = new Color(255, 0, 0);
+        setBodyColor(rosio);
+        setGunColor(rosio);
+        setRadarColor(rosio);
+        setBulletColor(disparo);
+        setScanColor(rosio);
+    }
+
+    private void rewardColor() {
+        Color rosio = new Color(132, 255, 0);
+        setBodyColor(rosio);
+        setGunColor(rosio);
+        setRadarColor(rosio);
+        setBulletColor(disparo);
         setScanColor(rosio);
     }
     public void victoryDance() {
@@ -71,7 +92,7 @@ public class NeuralHunter extends AdvancedRobot {
         }
     }
 
-   private void updateLearningCycle() {
+    private void updateLearningCycle() {
         double[] newStates = getCurrentNNStates();
         int newAction = selectBestAction(newStates);
 
@@ -178,6 +199,7 @@ public class NeuralHunter extends AdvancedRobot {
 
     @Override
     public void onScannedRobot(ScannedRobotEvent e) {
+        mainColor();
         enemyDistance = e.getDistance();
         enemyBearing = e.getBearing();
         enemyFound = true;
@@ -185,27 +207,32 @@ public class NeuralHunter extends AdvancedRobot {
 
     @Override
     public void onBulletHit(BulletHitEvent e) {
+        rewardColor();
         addReward(RobotConfig.REWARD_BULLET_HIT);
     }
 
     @Override
     public void onBulletMissed(BulletMissedEvent e) {
+        penaltyColor();
         addReward(RobotConfig.PENALTY_BULLET_MISSED);
     }
 
     @Override
     public void onHitByBullet(HitByBulletEvent e) {
+        penaltyColor();
         addReward(RobotConfig.PENALTY_HIT_BY_BULLET * e.getBullet().getPower());
     }
 
     @Override
     public void onHitWall(HitWallEvent e) {
+        penaltyColor();
         addReward(RobotConfig.PENALTY_WALL_HIT);
     }
 
     @Override
     public void onWin(WinEvent event) {
         saveBattleResult(true);
+        rewardColor();
         addReward(RobotConfig.REWARD_WIN);
         victoryDance();
     }
@@ -214,6 +241,7 @@ public class NeuralHunter extends AdvancedRobot {
     public void onDeath(DeathEvent event) {
         saveBattleResult(false);
         addReward(RobotConfig.PENALTY_DEATH);
+        penaltyColor();
     }
 
     private void saveBattleResult(boolean win) {
