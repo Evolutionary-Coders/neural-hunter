@@ -1,27 +1,27 @@
 f100151|Renato Freitas|2024-12-25 11:10:06 -0300|Merge pull request #19 from Evolutionary-Coders/develop
-63e1202|thnbi|2024-12-25 11:05:50 -0300|Update README.md #11
-e61c66e|thnbi|2024-12-25 11:03:06 -0300|fix: merge conflicts
-133e1cd|thnbi|2024-12-25 10:56:44 -0300|update README.md #11
+63e1202|Renato Freitas|2024-12-25 11:05:50 -0300|Update README.md #11
+e61c66e|Renato Freitas|2024-12-25 11:03:06 -0300|fix: merge conflicts
+133e1cd|Renato Freitas|2024-12-25 10:56:44 -0300|update README.md #11
 ccd082a|Renato Freitas|2024-12-20 12:10:08 -0300|Merge pull request #17 from Evolutionary-Coders/robot-core
-9c7eaf7|NicolasArthurDev|2024-12-20 11:55:02 -0300|ImAdicionado imações com cores
+9c7eaf7|Nicolas Arthur|2024-12-20 11:55:02 -0300|ImAdicionado imações com cores
 b32b712|Nicolas Arthur|2024-12-20 11:00:31 -0300|Merge pull request #16 from Evolutionary-Coders/robot-core
-ef49498|NicolasArthurDev|2024-12-19 19:47:42 -0300|Merge: Cores + Dança
-55c66d7|NicolasArthurDev|2024-12-19 19:42:55 -0300|fix: Implementado a funcionalidade de cores por penalidade
+ef49498|Nicolas Arthur|2024-12-19 19:47:42 -0300|Merge: Cores + Dança
+55c66d7|Nicolas Arthur|2024-12-19 19:42:55 -0300|fix: Implementado a funcionalidade de cores por penalidade
 6b1527b|Joao Pedro|2024-12-19 19:30:53 -0300|feat: adaptando a dança da vitória do robô
 4701a92|Joao Pedro|2024-12-19 19:12:46 -0300|Merge
 46b780a|Joao Pedro|2024-12-19 19:00:52 -0300|feat:Dança da vitória do robô
-cd6a15f|NicolasArthurDev|2024-12-17 19:32:39 -0300|Merge: Robot-core + Develope-no-position. Definido a função das cores
-8661a31|thnbi|2024-12-13 21:38:47 -0300|feat: implement NeuralHunter with Q-learning and neural network integration without LUT integration version #3
-947e271|NicolasArthurDev|2024-12-12 19:46:09 -0300|Fix: Removendo while de cores que estava travando o código #13
-8673c52|thnbi|2024-12-07 23:11:17 -0300|feat: implement NeuralNetwork #5
-b4b2ea6|thnbi|2024-12-07 21:22:55 -0300|refactor: remove unnecessary comments and standardize class structure
-30bc69d|thnbi|2024-12-07 19:24:09 -0300|feat: refactor LUT && implements qLogicalParts
-4d36eae|thnbi|2024-12-07 17:49:59 -0300|feat: implements lookUpTable #6
-8bfb617|thnbi|2024-12-07 17:26:33 -0300|feat: implements actions #8
-0a7e455|thnbi|2024-12-07 16:47:05 -0300|feat: create enemy class
-3f2f29c|thnbi|2024-12-07 16:39:18 -0300|feat: remove state functions dependent on arena size #12
-9892112|NicolasArthurDev|2024-12-05 20:24:02 -0300|feat: Definindo as cores da animação de cores do robo
-9325ca3|thnbi|2024-12-01 16:09:31 -0300|feat: implements States class #4
-54b3cd0|thnbi|2024-11-29 17:21:08 -0300|feat: get events to rewards system
-16fd096|thnbi|2024-11-27 16:32:02 -0300|feat: add basic NeuralHunter robot implementation
+cd6a15f|Nicolas Arthur|2024-12-17 19:32:39 -0300|Merge: Robot-core + Develope-no-position. Definido a função das cores
+8661a31|Renato Freitas|2024-12-13 21:38:47 -0300|feat: implement NeuralHunter with Q-learning and neural network integration without LUT integration version #3
+947e271|Nicolas Arthur|2024-12-12 19:46:09 -0300|Fix: Removendo while de cores que estava travando o código #13
+8673c52|Renato Freitas|2024-12-07 23:11:17 -0300|feat: implement NeuralNetwork #5
+b4b2ea6|Renato Freitas|2024-12-07 21:22:55 -0300|refactor: remove unnecessary comments and standardize class structure
+30bc69d|Renato Freitas|2024-12-07 19:24:09 -0300|feat: refactor LUT && implements qLogicalParts
+4d36eae|Renato Freitas|2024-12-07 17:49:59 -0300|feat: implements lookUpTable #6
+8bfb617|Renato Freitas|2024-12-07 17:26:33 -0300|feat: implements actions #8
+0a7e455|Renato Freitas|2024-12-07 16:47:05 -0300|feat: create enemy class
+3f2f29c|Renato Freitas|2024-12-07 16:39:18 -0300|feat: remove state functions dependent on arena size #12
+9892112|Nicolas Arthur|2024-12-05 20:24:02 -0300|feat: Definindo as cores da animação de cores do robo
+9325ca3|Renato Freitas|2024-12-01 16:09:31 -0300|feat: implements States class #4
+54b3cd0|Renato Freitas|2024-11-29 17:21:08 -0300|feat: get events to rewards system
+16fd096|Renato Freitas|2024-11-27 16:32:02 -0300|feat: add basic NeuralHunter robot implementation
 1199253|Renato Freitas|2024-11-27 16:28:16 -0300|Initial commit
